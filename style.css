@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+.img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 385px;
+    height: 247px;
+    gap: 17px;
+    margin: 10px;
+    justify-content: space-between;
+    position: absolute;
+    right: 75px;
+    animation-name: move;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+
+}
+@keyframes move{
+    0%{
+        top: 10px;
+    }
+    50%{
+        top: 50px;
+    }
+    100%{
+        top: 10px;
+    }
+}
+.container {
+    display: flex;
+    gap: 5px;
+    position: relative;
+}
+
+h1 {
+    color: #252c32;
+    border-bottom: 2px solid blue;
+    font-size: 17px;
+width: 177px;
+
+
+
+}
+
+.heading {
+    margin: 0 0 40px 0;
+    padding-right: 60px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #363435;
+}
+
+span {
+    font-family: 'quicksand', Arial, Helvetica, sans-serif;
+}
+img:hover{
+ color: rgb(235, 135, 190);
+
+}
+.img2{
+    position: absolute;
+    top: 260px;
+    left: 135px;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+     display: block;
+      
+    }
+    .img{
+        width: 100%;
+        left: 0;
+        animation: none;
+        gap: 15px;
+        position: static;
+        padding-right: 0;
+    }
+ 
+  }
