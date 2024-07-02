@@ -1,19 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
-.img{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.hiring-partner .img{
+   display: flex;
+   flex-wrap: wrap;
+  
     width: 385px;
     height: 247px;
-    gap: 17px;
+    gap: 10px;
     margin: 10px;
-    justify-content: space-between;
+    justify-content: center;
     position: absolute;
-    right: 75px;
+    right: -12px;
     animation-name: move;
     animation-duration: 2s;
     animation-iteration-count: infinite;
-    
 
 }
 @keyframes move{
@@ -27,15 +29,19 @@
         top: 10px;
     }
 }
-.container {
+.hiring-partner .container {
     display: flex;
     gap: 5px;
-    position: relative;
+    background-color: #F1FBFF;
+ height: 300px;
+
+
+
 }
 
-h1 {
+.hiring-partner h1 {
     color: #252c32;
-    border-bottom: 2px solid blue;
+  
     font-size: 17px;
 width: 177px;
 
@@ -43,40 +49,87 @@ width: 177px;
 
 }
 
-.heading {
-    margin: 0 0 40px 0;
+.hiring-partner .heading {
+    margin-bottom: 2px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #252C32;;
+    font-family: 'quicksand', Arial, Helvetica, sans-serif;
+}
+
+.hiring-partner span {
+    font-family: 'quicksand', Arial, Helvetica, sans-serif;
+   
+    padding-right: 60px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #363435;
     padding-right: 60px;
     font-weight: 400;
     font-size: 18px;
     line-height: 27px;
     color: #363435;
 }
-
-span {
-    font-family: 'quicksand', Arial, Helvetica, sans-serif;
-}
-img:hover{
+.hiring-partner img:hover{
  color: rgb(235, 135, 190);
 
 }
-.img2{
-    position: absolute;
-    top: 260px;
-    left: 135px;
+
+.banner-sec{
+    background-color: #fbd2b9;
+    padding: 20px 50px;
+
 }
 
+
 @media screen and (max-width: 500px) {
-    .container {
-     display: block;
+    .hiring-partner .container {
+     display: inline;
       
     }
-    .img{
+    .hiring-partner .img{
         width: 100%;
         left: 0;
         animation: none;
         gap: 15px;
         position: static;
-        padding-right: 0;
+        padding: 10px 7px;
     }
  
   }
+body{
+
+    
+}
+.banner {
+    display: flex;
+}
+.banner-content h1{
+    font-size: 39px;
+    line-height: 36px;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 15px;  
+    line-height: 50px;
+    
+}
+.banner-content{
+    font-family: 'Poppins', sans-serif;
+}
+.banner-content a{
+    background-color: #57698E;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    min-width: 170px;
+    height: 31px;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0;
+    display: inline-block;
+    text-align: center;
+    border-radius: 30px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
